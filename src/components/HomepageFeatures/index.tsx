@@ -14,25 +14,25 @@ const FeatureList: FeatureItem[] = [
     Svg: require(`@site/static/img/undraw_docusaurus_mountain.svg`).default,
     description:
   <>
-    We'll learn about scripting languages such as Bash, PowerShell, JavaScript, and Python
+    We'll learn about protecting and securing users' information on computer systems
   </>,
-    title: `Languages`,
+    title: `Security`,
   },
   {
     Svg: require(`@site/static/img/undraw_docusaurus_tree.svg`).default,
     description:
   <>
-    We'll learn what git and GitHub are and how to use them
+    We'll learn to use the command line interface for system administration
   </>,
-    title: `Source Control`,
+    title: `CLI`,
   },
   {
     Svg: require(`@site/static/img/undraw_docusaurus_react.svg`).default,
     description:
   <>
-    We'll learn how to deploy scripts to the cloud
+    We'll learn how to install and manage disks and file systems
   </>,
-    title: `Deploying Scripts`,
+    title: `Filesystem`,
   },
 ];
 
