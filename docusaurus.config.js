@@ -7,18 +7,18 @@ const darkCodeTheme = require(`prism-react-renderer/themes/dracula`);
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: `IT1081C - Systems Adminsitration`,
+  title: `IT1081C - Systems Administration`,
   tagline: `Wesley Reed`,
-  url: `https://reedws.github.io`,
-  baseUrl: `/IT1081C/`,
+  url: `https://it1081c.github.io`,
+  baseUrl: `/`,
   onBrokenLinks: `throw`,
   onBrokenMarkdownLinks: `warn`,
   favicon: `img/favicon.ico`,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: `reedws`, // Usually your GitHub org/user name.
-  projectName: `IT1081C`, // Usually your repo name.
+  organizationName: `IT1081C`, // Usually your GitHub org/user name.
+  projectName: `IT1081C.github.io`, // Usually your repo name.
   trailingSlash: false,
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -66,7 +66,7 @@ const config = {
             label: `Syllabus`,
           },
           {
-            href: `https://github.com/reedws/IT1081C`,
+            href: `https://github.com/IT1081C/IT1081C`,
             label: `GitHub`,
             position: `right`,
           },
@@ -80,7 +80,7 @@ const config = {
             items: [
               {
                 label: `GitHub`,
-                href: `https://github.com/reedws/IT1081C`,
+                href: `https://github.com/IT1081C/IT1081C`,
               },
             ],
           },
