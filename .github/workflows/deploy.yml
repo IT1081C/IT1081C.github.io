@@ -26,3 +26,13 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+
+      - name: Build PDF
+        run: npx docs-to-pdf docusaurus --initialDocURLs="https://it1081c.github.io/syllabus/"" --outputPDFFilename syllabus.pdf
+
+      - name: Upload results
+        uses: actions/upload-artifact@v3
+        with:
+          name: syllabus.pdf
+          path: syllabus.pdf
+          if-no-files-found: error
