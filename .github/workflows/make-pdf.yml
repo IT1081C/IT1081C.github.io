@@ -1,8 +1,12 @@
 name: Make PDF of syllabus
 
 on:
-  deployment:
+  deployment_status:
   workflow_dispatch:
+
+concurrency:
+  group: pdf
+  cancel-in-progress: true
 
 jobs:
   pdf:
