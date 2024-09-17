@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Make PDF of syllabus
 
 on:
   deployment:
