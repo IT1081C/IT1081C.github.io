@@ -15,12 +15,19 @@ jobs:
           node-version: 20.x
           cache: npm
 
+      - name: Install Prince
+        run: |
+          curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
+          tar zxf prince-14.2-linux-generic-x86_64.tar.gz
+          cd prince-14.2-linux-generic-x86_64
+          yes "" | sudo ./install.sh
+
       - name: Build PDF
-        run: npx docs-to-pdf docusaurus --initialDocURLs="https://it1081c.github.io/syllabus/" --outputPDFFilename syllabus.pdf
+        run: npx docusaurus-prince-pdf -u https://it1081c.github.io/syllabus/info --include-index --output syllabus.pdf
 
       - name: Upload results
         uses: actions/upload-artifact@v3
         with:
-          name: syllabus.pdf
-          path: syllabus.pdf
+          name: result
+          path: pdf/syllabus.pdf
           if-no-files-found: error
